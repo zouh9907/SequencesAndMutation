@@ -16,7 +16,7 @@ Example 2:
 
 Authors: David Mutchler, Amanda Stouder, Chandan Rupakheti, Katie Dion,
          Claude Anderson, Delvin Defoe, Curt Clifton, Matt Boutell,
-         and their colleagues. January 2014.
+         and their colleagues.
 """
 
 import rosegraphics as rg
@@ -39,12 +39,12 @@ def one_example_of_danger():
     # ------------------------------------------------------------------
     # Students:
     #   1. Read the   move_randomly   specification below.
-    #   2. Run   test_move_randomly.
+    #   2. Run   run_test_move_randomly.
     #   3. Does the code pass the test?  (Answer: Yes.)
     #
     # Then:
     #   1. Read the   repeat_move_randomly   specification below.
-    #   2. Run   test_repeat_move_randomly.
+    #   2. Run   run_test_repeat_move_randomly.
     #   3. Does the code pass the test?  (Answer: No.)
     #
     # So, you would think that the   REPEAT_move_randomly   code
@@ -56,11 +56,11 @@ def one_example_of_danger():
     # ------------------------------------------------------------------
 
     # Un-comment these as you do the above exercise.
-    test_move_randomly()
-    test_repeat_move_randomly()
+    run_test_move_randomly()
+    run_test_repeat_move_randomly()
 
 
-def test_move_randomly():
+def run_test_move_randomly():
     """ Tests the   move_randomly   function. """
     window = rg.RoseWindow(800, 500)
 
@@ -106,7 +106,7 @@ def move_randomly(window, circle, times_to_move, seconds_per_move):
         window.render(seconds_per_move)
 
 
-def test_repeat_move_randomly():
+def run_test_repeat_move_randomly():
     """ Tests the   repeat_move_randomly   function. """
     window = rg.RoseWindow(800, 500)
 

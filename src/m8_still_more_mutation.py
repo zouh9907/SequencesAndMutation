@@ -4,18 +4,18 @@ In this module, you mutate by DELETING elements of a list.
 
 Authors: David Mutchler, Amanda Stouder, Chandan Rupakheti, Katie Dion,
          Claude Anderson, Delvin Defoe, Curt Clifton, their colleagues,
-         and PUT YOUR NAME HERE.  August 2014.
+         and PUT YOUR NAME HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import m6_mutation
 
 
 def main():
-    test_RETURN_delete_negatives()
-    test_MUTATE_delete_negatives()
+    run_test_RETURN_delete_negatives()
+    run_test_MUTATE_delete_negatives()
 
 
-def test_RETURN_delete_negatives():
+def run_test_RETURN_delete_negatives():
     """ Tests the   RETURN_delete_negatives   function. """
     print()
     print('--------------------------------')
@@ -25,28 +25,28 @@ def test_RETURN_delete_negatives():
     # ------------------------------------------------------------------
     # Test 1:
     # ------------------------------------------------------------------
-    test_number = 1
+    run_test_number = 1
     original_argument = [-30.2, 50, 12.5, -1, -5, 8, 0]
     correct_argument_value_after_function_call = original_argument.copy()
     correct_returned_value = [50, 12.5, 8, 0]
 
     m6_mutation.run_test(RETURN_delete_negatives,
                          original_argument,
-                         test_number,
+                         run_test_number,
                          correct_returned_value,
                          correct_argument_value_after_function_call)
 
     # ------------------------------------------------------------------
     # Test 2:
     # ------------------------------------------------------------------
-    test_number = 2
+    run_test_number = 2
     original_argument = [2, 0, -9, 1, -30]
     correct_argument_value_after_function_call = original_argument.copy()
     correct_returned_value = [2, 0, 1]
 
     m6_mutation.run_test(RETURN_delete_negatives,
                          original_argument,
-                         test_number,
+                         run_test_number,
                          correct_returned_value,
                          correct_argument_value_after_function_call)
 
@@ -74,7 +74,7 @@ def RETURN_delete_negatives(numbers):
     #          (using the above code for testing).
 
 
-def test_MUTATE_delete_negatives():
+def run_test_MUTATE_delete_negatives():
     """ Tests the   MUTATE_delete_negatives   function. """
     print()
     print('--------------------------------')
@@ -84,28 +84,28 @@ def test_MUTATE_delete_negatives():
     # ------------------------------------------------------------------
     # Test 1:
     # ------------------------------------------------------------------
-    test_number = 1
+    run_test_number = 1
     original_argument = [-30.2, 50, 12.5, -1, -5, 8, 0]
     correct_argument_value_after_function_call = [50, 12.5, 8, 0]
     correct_returned_value = None
 
     m6_mutation.run_test(MUTATE_delete_negatives,
                          original_argument,
-                         test_number,
+                         run_test_number,
                          correct_returned_value,
                          correct_argument_value_after_function_call)
 
     # ------------------------------------------------------------------
     # Test 2:
     # ------------------------------------------------------------------
-    test_number = 2
+    run_test_number = 2
     original_argument = [2, 0, -9, 1, -30]
     correct_argument_value_after_function_call = [2, 0, 1]
     correct_returned_value = None
 
     m6_mutation.run_test(MUTATE_delete_negatives,
                          original_argument,
-                         test_number,
+                         run_test_number,
                          correct_returned_value,
                          correct_argument_value_after_function_call)
 

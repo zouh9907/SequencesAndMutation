@@ -4,7 +4,7 @@ This module demonstrates that  TUPLES  and  STRINGS  are IMMUTABLE:
 
 Authors: David Mutchler, Amanda Stouder, Chandan Rupakheti, Katie Dion,
          Claude Anderson, Delvin Defoe, Curt Clifton, Matt Boutell,
-         and their colleagues. January 2014.
+         and their colleagues.
 """
 # ----------------------------------------------------------------------
 # Students: Read and run this program in the debugger to watch attemps

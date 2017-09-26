@@ -4,7 +4,7 @@ In this module, you mutate by CHANGING elements of a list.
 
 Authors: David Mutchler, Amanda Stouder, Chandan Rupakheti, Katie Dion,
          Claude Anderson, Delvin Defoe, Curt Clifton, their colleagues,
-         and PUT YOUR NAME HERE.  August 2014.
+         and PUT YOUR NAME HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 # ----------------------------------------------------------------------
@@ -15,11 +15,11 @@ Authors: David Mutchler, Amanda Stouder, Chandan Rupakheti, Katie Dion,
 
 
 def main():
-    test_RETURN_replace_negatives_by_zeros()
-    test_MUTATE_replace_negatives_by_zeros()
+    run_test_RETURN_replace_negatives_by_zeros()
+    run_test_MUTATE_replace_negatives_by_zeros()
 
 
-def test_RETURN_replace_negatives_by_zeros():
+def run_test_RETURN_replace_negatives_by_zeros():
     """ Tests the   RETURN_replace_negatives_by_zeros   function. """
     print()
     print('------------------------------------------')
@@ -29,33 +29,33 @@ def test_RETURN_replace_negatives_by_zeros():
     # ------------------------------------------------------------------
     # Test 1:
     # ------------------------------------------------------------------
-    test_number = 1
+    run_test_number = 1
     original_argument = [-30.2, 50, 12.5, -1, -5, 8, 0]
     correct_argument_value_after_function_call = original_argument.copy()
     correct_returned_value = [0, 50, 12.5, 0, 0, 8, 0]
 
     run_test(RETURN_replace_negatives_by_zeros,
              original_argument,
-             test_number,
+             run_test_number,
              correct_returned_value,
              correct_argument_value_after_function_call)
 
     # ------------------------------------------------------------------
     # Test 2:
     # ------------------------------------------------------------------
-    test_number = 2
+    run_test_number = 2
     original_argument = [2, 0, -9, 1, -30]
     correct_argument_value_after_function_call = original_argument.copy()
     correct_returned_value = [2, 0, 0, 1, 0]
 
     run_test(RETURN_replace_negatives_by_zeros,
              original_argument,
-             test_number,
+             run_test_number,
              correct_returned_value,
              correct_argument_value_after_function_call)
 
 
-def run_test(function_to_test, argument, test_number,
+def run_test(function_to_test, argument, run_test_number,
              correct_returned_value,
              correct_argument_value_after_function_call):
     """
@@ -66,7 +66,7 @@ def run_test(function_to_test, argument, test_number,
     Prints messages to indicate whether the test passed or failed.
     """
     print()
-    print('Running TEST {}:'.format(test_number, test_number))
+    print('Running TEST {}:'.format(run_test_number, run_test_number))
 
     actual_returned_value = function_to_test(argument)
 
@@ -76,7 +76,7 @@ def run_test(function_to_test, argument, test_number,
                                    correct_argument_value_after_function_call)
 
     if passed_check1 and passed_check2:
-        print('  Your code PASSES Test {}.'.format(test_number))
+        print('  Your code PASSES Test {}.'.format(run_test_number))
 
 
 def check_returned_value(actual_returned_value, correct_returned_value):
@@ -135,7 +135,7 @@ def RETURN_replace_negatives_by_zeros(numbers):
     #          (using the above code for testing).
 
 
-def test_MUTATE_replace_negatives_by_zeros():
+def run_test_MUTATE_replace_negatives_by_zeros():
     """ Tests the   MUTATE_replace_negatives_by_zeros   function. """
     print()
     print('------------------------------------------')
@@ -145,28 +145,28 @@ def test_MUTATE_replace_negatives_by_zeros():
     # ------------------------------------------------------------------
     # Test 1:
     # ------------------------------------------------------------------
-    test_number = 1
+    run_test_number = 1
     original_argument = [-30.2, 50, 12.5, -1, -5, 8, 0]
     correct_argument_value_after_function_call = [0, 50, 12.5, 0, 0, 8, 0]
     correct_returned_value = None
 
     run_test(MUTATE_replace_negatives_by_zeros,
              original_argument,
-             test_number,
+             run_test_number,
              correct_returned_value,
              correct_argument_value_after_function_call)
 
     # ------------------------------------------------------------------
     # Test 2:
     # ------------------------------------------------------------------
-    test_number = 2
+    run_test_number = 2
     original_argument = [2, 0, -9, 1, -30]
     correct_argument_value_after_function_call = [2, 0, 0, 1, 0]
     correct_returned_value = None
 
     run_test(MUTATE_replace_negatives_by_zeros,
              original_argument,
-             test_number,
+             run_test_number,
              correct_returned_value,
              correct_argument_value_after_function_call)
 

@@ -10,17 +10,17 @@ for ITERATING through SEQUENCES, including selections from:
   -- Looking at two sequences in parallel
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  October 2016.
+         their colleagues and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    test_shortest_string()
-    test_index_of_largest_number()
-    test_number_of_stutters()
-    test_is_palindrome()
-    test_count_same()
+    run_test_shorrun_test_string()
+    run_test_index_of_largest_number()
+    run_test_number_of_stutters()
+    run_test_is_palindrome()
+    run_test_count_same()
 
 
 # ----------------------------------------------------------------------
@@ -28,11 +28,11 @@ def main():
 # (or SMALLEST) item in the sequence, returning its INDEX (or possibly
 # the item itself), as in the following problems:
 # ----------------------------------------------------------------------
-def test_shortest_string():
-    """ Tests the   shortest_string   function. """
+def run_test_shorrun_test_string():
+    """ Tests the   shorrun_test_string   function. """
     print()
     print('--------------------------------------------------')
-    print('Testing the   shortest_string   function:')
+    print('Testing the   shorrun_test_string   function:')
     print('--------------------------------------------------')
 
     sequence1 = ('all', 'we', 'are', 'saying',
@@ -45,39 +45,39 @@ def test_shortest_string():
     sequence5 = ('a', '', 'a')
 
     expected = 'a'
-    answer = shortest_string(sequence1)
+    answer = shorrun_test_string(sequence1)
     print('Expected and actual are:', expected, answer)
     if expected != answer:
         print('  Your answer is WRONG.')
 
     expected = 'we'
-    answer = shortest_string(sequence2)
+    answer = shorrun_test_string(sequence2)
     print('Expected and actual are:', expected, answer)
     if expected != answer:
         print('  Your answer is WRONG.')
 
     expected = 'is'
-    answer = shortest_string(sequence3)
+    answer = shorrun_test_string(sequence3)
     print('Expected and actual are:', expected, answer)
     if expected != answer:
         print('  Your answer is WRONG.')
 
     expected = 'all we are saying is give peace a chance'
-    answer = shortest_string(sequence4)
+    answer = shorrun_test_string(sequence4)
     print('Expected is:', expected)
     print('Actual is:  ', answer)
     if expected != answer:
         print('  Your answer is WRONG.')
 
     expected = ''
-    answer = shortest_string(sequence5)
+    answer = shorrun_test_string(sequence5)
     print('Expected and actual are:', expected, answer)
     print('The expected and actual should both be the empty string.')
     if expected != answer:
         print('  Your answer is WRONG.')
 
 
-def shortest_string(strings):
+def shorrun_test_string(strings):
     """
     What comes in:
       -- a non-empty sequence of strings
@@ -108,7 +108,7 @@ def shortest_string(strings):
     # ------------------------------------------------------------------
 
 
-def test_index_of_largest_number():
+def run_test_index_of_largest_number():
     """ Tests the   index_of_largest_number   function. """
     print()
     print('--------------------------------------------------')
@@ -189,7 +189,7 @@ def index_of_largest_number(numbers, n):
 # Some problems iterate (loop) through the sequence accessing TWO
 # (or more) places in the sequence AT THE SAME ITERATION, like these:
 # ----------------------------------------------------------------------
-def test_number_of_stutters():
+def run_test_number_of_stutters():
     """ Tests the   number_of_stutters   function. """
     print()
     print('--------------------------------------------------')
@@ -240,7 +240,7 @@ def number_of_stutters(s):
     # ------------------------------------------------------------------
 
 
-def test_is_palindrome():
+def run_test_is_palindrome():
     """ Tests the   is_palindrome   function. """
     print()
     print('--------------------------------------------------')
@@ -323,7 +323,7 @@ def is_palindrome(s):
 # Some problems loop (iterate) through two or more sequences
 #    IN PARALLEL, as in the   count_same   problem below.
 # ----------------------------------------------------------------------
-def test_count_same():
+def run_test_count_same():
     """ Tests the   count_same   function. """
     print()
     print('--------------------------------------------------')

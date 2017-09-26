@@ -5,7 +5,7 @@ insides change.
 
 Authors: David Mutchler, Amanda Stouder, Chandan Rupakheti, Katie Dion,
          Claude Anderson, Delvin Defoe, Curt Clifton, Matt Boutell,
-         and their colleagues. January 2014.
+         and their colleagues.
 """
 # ----------------------------------------------------------------------
 # Students: Read and run this program.

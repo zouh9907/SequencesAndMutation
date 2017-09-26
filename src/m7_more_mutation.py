@@ -4,18 +4,18 @@ by changing the values of instance variables.
 
 Authors: David Mutchler, Amanda Stouder, Chandan Rupakheti, Katie Dion,
          Claude Anderson, Delvin Defoe, Curt Clifton, their colleagues,
-         and PUT YOUR NAME HERE.  August 2014.
+         and PUT YOUR NAME HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
 
 def main():
-    test_RETURN_circle()
-    test_MUTATE_circle()
+    run_test_RETURN_circle()
+    run_test_MUTATE_circle()
 
 
-def test_RETURN_circle():
+def run_test_RETURN_circle():
     """ Tests the   RETURN_circle   function. """
     print()
     print('-----------------------------------------')
@@ -177,7 +177,7 @@ def RETURN_circle(circle, color):
     # HINT: Use the   clone   method to make the copy.
 
 
-def test_MUTATE_circle():
+def run_test_MUTATE_circle():
     """ Tests the   MUTATE_circle   function. """
     print()
     print('-----------------------------------------')
