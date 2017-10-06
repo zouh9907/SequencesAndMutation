@@ -16,7 +16,7 @@ Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    run_test_shorrun_test_string()
+    run_test_shortest_string()
     run_test_index_of_largest_number()
     run_test_number_of_stutters()
     run_test_is_palindrome()
@@ -28,11 +28,11 @@ def main():
 # (or SMALLEST) item in the sequence, returning its INDEX (or possibly
 # the item itself), as in the following problems:
 # ----------------------------------------------------------------------
-def run_test_shorrun_test_string():
-    """ Tests the   shorrun_test_string   function. """
+def run_test_shortest_string():
+    """ Tests the   shortest_string   function. """
     print()
     print('--------------------------------------------------')
-    print('Testing the   shorrun_test_string   function:')
+    print('Testing the   shortest_string   function:')
     print('--------------------------------------------------')
 
     sequence1 = ('all', 'we', 'are', 'saying',
@@ -45,39 +45,39 @@ def run_test_shorrun_test_string():
     sequence5 = ('a', '', 'a')
 
     expected = 'a'
-    answer = shorrun_test_string(sequence1)
+    answer = shortest_string(sequence1)
     print('Expected and actual are:', expected, answer)
     if expected != answer:
         print('  Your answer is WRONG.')
 
     expected = 'we'
-    answer = shorrun_test_string(sequence2)
+    answer = shortest_string(sequence2)
     print('Expected and actual are:', expected, answer)
     if expected != answer:
         print('  Your answer is WRONG.')
 
     expected = 'is'
-    answer = shorrun_test_string(sequence3)
+    answer = shortest_string(sequence3)
     print('Expected and actual are:', expected, answer)
     if expected != answer:
         print('  Your answer is WRONG.')
 
     expected = 'all we are saying is give peace a chance'
-    answer = shorrun_test_string(sequence4)
+    answer = shortest_string(sequence4)
     print('Expected is:', expected)
     print('Actual is:  ', answer)
     if expected != answer:
         print('  Your answer is WRONG.')
 
     expected = ''
-    answer = shorrun_test_string(sequence5)
+    answer = shortest_string(sequence5)
     print('Expected and actual are:', expected, answer)
     print('The expected and actual should both be the empty string.')
     if expected != answer:
         print('  Your answer is WRONG.')
 
 
-def shorrun_test_string(strings):
+def shortest_string(strings):
     """
     What comes in:
       -- a non-empty sequence of strings
